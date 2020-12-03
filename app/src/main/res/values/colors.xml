@@ -2,7 +2,6 @@
 <resources>
 
     <color name="colorPrimary">#6200EE</color>
-<!--    <color name="colorPrimary">#43DFE1</color>-->
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="colorTomato">#FF6347</color>
@@ -11,5 +10,5 @@
     <color name="colorWhiteTransparent">#80ffffff</color>
 
     <color name="colorBlue">#43DFE1</color>
-    <color name="colorBlueTransparent">#80ffffff</color>
+    <color name="colorBlueTransparent">#8043DFE1</color>
 </resources>
