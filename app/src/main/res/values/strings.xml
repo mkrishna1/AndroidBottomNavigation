@@ -5,4 +5,15 @@
     <string name="nav_account">Account</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="tnq_guru">Tnq Guru</string>
+    <string name="sign_in_your_account">Sign in your account</string>
+    <string name="email">Email</string>
+    <string name="you_example_com">you@example.com</string>
+    <string name="password">Password</string>
+    <string name="password_hint">• • • • • • •</string>
+    <string name="sign_in">Sign In</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="forgot_password">Forgot Password?</string>
 </resources>

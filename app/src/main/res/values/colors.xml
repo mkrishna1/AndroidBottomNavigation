@@ -3,7 +3,7 @@
 
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorAccent">#212121</color>
     <color name="colorTomato">#FF6347</color>
 
     <color name="colorWhite">#ffffff</color>
@@ -11,4 +11,12 @@
 
     <color name="colorBlue">#43DFE1</color>
     <color name="colorBlueTransparent">#8043DFE1</color>
+
+
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="colorDivider">#BDBDBD</color>
+    <color name="colorTextIcons">#FFFFFF</color>
+    <color name="colorBackground">#FAFAFA</color>
+    <color name="colorMintText">#BDBDBD</color>
 </resources>
