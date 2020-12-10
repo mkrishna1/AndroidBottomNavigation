@@ -16,4 +16,13 @@
     <string name="don_t_have_an_account">Don\'t have an account?</string>
     <string name="sign_up">Sign Up</string>
     <string name="forgot_password">Forgot Password?</string>
+    <string name="name">Name</string>
+    <string name="user_profile">User Profile</string>
+    <string name="phone">Phone</string>
+    <string name="phone_num">+91 99999 00000</string>
+    <string name="from">from</string>
+    <string name="TNQ_GURU">TNQ GURU</string>
+    <string name="mobile">Mobile</string>
+    <string name="user_image">Upload Photo</string>
+    <string name="user_name_edit">Edit User Name</string>
 </resources>
