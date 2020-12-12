@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginActivity"
-    android:background="@color/colorAccent">
+    android:background="@color/colorBackground">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -15,29 +15,12 @@
             android:id="@+id/layoutHeader"
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:background="@color/colorBlue"
+            android:background="@drawable/login_background"
             android:gravity="center"
             android:orientation="vertical"
             app:layout_constraintTop_toTopOf="parent">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/ubuntu_bold"
-                android:includeFontPadding="false"
-                android:text="@string/welcome_to"
-                android:textColor="@color/colorTextIcons"
-                android:textSize="16sp"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:fontFamily="@font/ubuntu_bold"
-                android:includeFontPadding="false"
-                android:text="@string/tnq_guru"
-                android:textColor="@color/colorTextIcons"
-                android:textSize="30sp"/>
 
         </LinearLayout>
 
@@ -49,7 +32,7 @@
             android:fontFamily="@font/ubuntu_regular"
             android:includeFontPadding="false"
             android:text="@string/sign_in_your_account"
-            android:textColor="@color/colorTextIcons"
+            android:textColor="@color/colorPrimaryText"
             android:textSize="17sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -142,7 +125,7 @@
             android:gravity="end"
             android:includeFontPadding="false"
             android:text="@string/forgot_password"
-            android:textColor="@color/colorTextIcons"
+            android:textColor="@color/colorPrimaryText"
             android:textSize="15sp"
             app:layout_constraintTop_toBottomOf="@id/cardSignIn"/>
 
@@ -181,7 +164,7 @@
             android:gravity="center"
             android:includeFontPadding="false"
             android:text="@string/don_t_have_an_account"
-            android:textColor="@color/colorTextIcons"
+            android:textColor="@color/colorPrimaryText"
             android:textSize="15sp"
             app:layout_constraintTop_toBottomOf="@id/buttonSignIn"/>
 
