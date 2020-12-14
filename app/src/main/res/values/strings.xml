@@ -25,4 +25,7 @@
     <string name="mobile">Mobile</string>
     <string name="user_image">Upload Photo</string>
     <string name="user_name_edit">Edit User Name</string>
+    <string name="enter_your_mail">Your Email</string>
+    <string name="cancel">Cancel</string>
+    <string name="send">Send</string>
 </resources>
