@@ -28,4 +28,5 @@
     <string name="enter_your_mail">Your Email</string>
     <string name="cancel">Cancel</string>
     <string name="send">Send</string>
+    <string name="forgot_password_sent">Forgot Password</string>
 </resources>
