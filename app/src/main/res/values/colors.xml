@@ -8,6 +8,7 @@
 
     <color name="colorWhite">#ffffff</color>
     <color name="colorWhiteTransparent">#80ffffff</color>
+    <color name="colorTransWhite">#95ffffff</color>
 
     <color name="colorBlue">#43DFE1</color>
     <color name="colorBlueTransparent">#8043DFE1</color>

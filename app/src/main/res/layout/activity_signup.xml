@@ -4,53 +4,105 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
+    tools:context=".SignupActivity"
     android:background="@color/colorBackground">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <LinearLayout
+        <RelativeLayout
             android:id="@+id/layoutHeader"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:background="@drawable/login_background"
+            android:layout_height="60dp"
             android:gravity="center"
-            android:orientation="vertical"
+            android:background="@color/colorBlue"
             app:layout_constraintTop_toTopOf="parent">
 
-        </LinearLayout>
+            <TextView
+                android:id="@+id/textSignInLable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ubuntu_medium"
+                android:includeFontPadding="false"
+                android:text="@string/create_your_account"
+                android:textColor="@color/colorTextIcons"
+                android:textSize="21sp"/>
 
-        <TextView
-            android:id="@+id/textSignInLable"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20sp"
-            android:fontFamily="@font/ubuntu_regular"
-            android:includeFontPadding="false"
-            android:text="@string/sign_in_your_account"
-            android:textColor="@color/colorPrimaryText"
-            android:textSize="17sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/layoutHeader"/>
+        </RelativeLayout>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardSignIn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="40dp"
             android:layout_marginTop="20dp"
-            android:layout_marginEnd="30dp"
+            android:layout_marginEnd="40dp"
             app:cardCornerRadius="4dp"
-            app:layout_constraintTop_toBottomOf="@id/textSignInLable">
+            app:cardBackgroundColor="@color/colorTransWhite"
+            app:layout_constraintTop_toBottomOf="@id/layoutHeader">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:padding="4dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:includeFontPadding="false"
+                    android:text="@string/username"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="13sp"/>
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@null"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:hint="@string/sample123"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="no"
+                    android:includeFontPadding="false"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:includeFontPadding="false"
+                    android:text="@string/mobile"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/mobileNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@null"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:hint="@string/phone_num"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="no"
+                    android:includeFontPadding="false"
+                    android:inputType="phone"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="15sp"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -109,23 +161,37 @@
                     android:textColor="@color/colorPrimaryText"
                     android:textSize="15sp"/>
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:includeFontPadding="false"
+                    android:text="@string/course"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="13sp"/>
+
+                <Spinner
+                    android:id="@+id/selectCourse"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@null"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:entries="@array/selectList"
+                    android:imeOptions="actionDone"
+                    android:importantForAutofill="no"
+                    android:includeFontPadding="false"
+                    android:inputType="textFilter"
+                    android:textColor="@color/colorDivider"
+                    android:textSize="15sp"/>
+
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
-
-        <TextView
-            android:id="@+id/textForgotAccount"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="30dp"
-            android:fontFamily="@font/ubuntu_regular"
-            android:gravity="end"
-            android:includeFontPadding="false"
-            android:text="@string/forgot_password"
-            android:textColor="@color/colorPrimaryText"
-            android:textSize="15sp"
-            app:layout_constraintTop_toBottomOf="@id/cardSignIn"/>
 
         <Button
             android:id="@+id/buttonSignIn"
@@ -136,11 +202,11 @@
             android:layout_marginEnd="30dp"
             android:fontFamily="@font/ubuntu_bold"
             android:includeFontPadding="false"
-            android:text="@string/sign_in"
+            android:text="@string/create_an_account"
             android:background="@drawable/login_btn"
             android:textColor="@color/colorTextIcons"
             android:textSize="15sp"
-            app:layout_constraintTop_toBottomOf="@id/textForgotAccount"/>
+            app:layout_constraintTop_toBottomOf="@id/cardSignIn"/>
 
         <ProgressBar
             android:id="@+id/signInProgressBar"
@@ -161,7 +227,7 @@
             android:fontFamily="@font/ubuntu_regular"
             android:gravity="center"
             android:includeFontPadding="false"
-            android:text="@string/don_t_have_an_account"
+            android:text="@string/already_have_an_account"
             android:textColor="@color/colorPrimaryText"
             android:textSize="15sp"
             app:layout_constraintTop_toBottomOf="@id/buttonSignIn"/>
@@ -175,7 +241,7 @@
             android:gravity="center"
             android:includeFontPadding="false"
             android:padding="6dp"
-            android:text="@string/sign_up"
+            android:text="@string/login"
             android:textAllCaps="true"
             android:textColor="@color/colorTomato"
             android:textSize="16sp"

@@ -29,4 +29,23 @@
     <string name="cancel">Cancel</string>
     <string name="send">Send</string>
     <string name="forgot_password_sent">Forgot Password</string>
+    <string name="create_an_account">Create An Account</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="sample123">sample123</string>
+    <string name="course">Course</string>
+    <string name="create_your_account">Create Your Account</string>
+    <string name="select_one">Select</string>
+
+    <string-array name="selectList">
+        <item>Select</item>
+        <item>Java</item>
+        <item>PHP</item>
+        <item>ASP</item>
+        <item>Python</item>
+        <item>Android</item>
+        <item>Dot Net</item>
+        <item>Networking</item>
+    </string-array>
 </resources>
